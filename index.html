@@ -32,13 +32,13 @@
       align-items: center;
     }
     .logo img {
-      height: 32px;
+      height: 80px; /* bigger logo */
     }
 
     .hero {
-      margin-top: 70px; /* header height */
+      margin-top: 100px; /* increased to match taller header */
       background: url('assets/background1.jpg') no-repeat center center / cover; /* image behind video */
-      min-height: calc(100vh - 70px);
+      min-height: calc(100vh - 100px);
       padding: 20px;
       position: relative;
       overflow: hidden;
@@ -202,7 +202,8 @@
     }
 
     @media(min-width:768px){
-      .hero {padding: 60px 40px;}
+      .logo img { height: 100px; }
+      .hero {padding: 60px 40px; margin-top: 120px; min-height: calc(100vh - 120px);}
       .hero h1 {font-size:26px;}
       section h2 {font-size:22px;}
     }
